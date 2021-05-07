@@ -8,11 +8,11 @@ RUN git clone https://github.com/hakyimlab/MetaXcan.git
 
 WORKDIR /opt/MetaXcan
 
-RUN conda env create -f software/conda_env.yaml
+RUN conda env update -n base --file software/conda_env.yaml
 
-RUN conda init
+CMD [""]
 
-WORKDIR /opt/MetaXcan/software
+ENTRYPOINT [""]
 
 
 
